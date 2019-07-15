@@ -1,13 +1,27 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+ 
+  <swiper class="" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+  <block wx:for="{{indexbanner}}" wx:key="index">
+    <swiper-item>
+     <image src='{{uploadpath}}indexbanner/{{item.img}}' bindtap='viewPhoto'  id='{{uploadpath}}indexbanner/{{item.img}}' style='width:750rpx;height:350rpx;'></image>
+    </swiper-item>   
+  </block>  
+</swiper>
+
+<view class='flex-row flex-center'>
+
+<view class='flex-row flex-column flex-1'>
+  <view>女孩</view>
+  <image src='{{uploadpath}}resource/{{res.qi}}' class='row'></image>
+  <button type="default" bindtap='onAon'>请选择</button>
+   </view>
+
+ <view class='flex-row flex-column flex-1'>
+ <view>男孩</view>
+  <image src='{{uploadpath}}resource/{{res.qi}}' class='row'></image>
+  <button type="default" bindtap='onAon'>请选择</button>
+   </view>
+ </view>
+ 
 </view>

@@ -1,0 +1,17 @@
+/* pages/conn/conn.wxss */
+view{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+.view-sp-area{
+  margin: 0 auto;
+  width: 60%;
+  display: flex;
+
+  align-items: center;
+}
+.row{
+  width: 220rpx;
+  height: 220rpx;
+  margin-left: 10rpx;
+}

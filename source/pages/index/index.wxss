@@ -1,5 +1,5 @@
-/**index.wxss**/
-.userinfo {
+
+/**.userinfo {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,4 +18,40 @@
 
 .usermotto {
   margin-top: 200px;
+}
+**/
+
+page{
+  background: #f9f9f9;
+}
+.slide-image{
+  width: 100%;
+}
+
+.section__ctn{
+    text-align: center;
+}
+.btn{
+  width: 49%;
+  background: none;
+}
+.btn image{
+  width: 100%;
+}
+
+button{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+.button-sp-area{
+  margin: 0 auto;
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+.row{
+  width: 300rpx;
+  height: 300rpx;
+  
+
 }

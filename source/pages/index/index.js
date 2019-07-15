@@ -14,10 +14,26 @@ class Content extends AppBase {
   }
   onMyShow() {
     var that = this;
+    var instapi = new InstApi();
+
+    instapi.indexbanner({}, (indexbanner) => {
+      this.Base.setMyData({ indexbanner });
+    }); 
+  }
+
+  onAon(){
+    console.log("dd")
+    wx.navigateTo({
+     url:'/pages/conn/conn',
+   })
+
   }
 }
+
 var content = new Content();
 var body = content.generateBodyJson();
 body.onLoad = content.onLoad; 
 body.onMyShow = content.onMyShow;
+body.onAon=content.onAon;
 Page(body)
+

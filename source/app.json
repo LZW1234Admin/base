@@ -1,6 +1,9 @@
 {
   "pages": [
+    "pages/conn/conn",
+    "pages/index/index",
     "pages/home/home",
+   
     "pages/auth/auth"
   ],
   "permission": {
