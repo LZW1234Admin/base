@@ -12,15 +12,15 @@
 <view class='flex-row flex-center'>
 
 <view class='flex-row flex-column flex-1'>
-  <view>女孩</view>
-  <image src='{{uploadpath}}resource/{{res.qi}}' class='row'></image>
-  <button type="default" bindtap='onAon'>请选择</button>
+  <view class='ai' bindtap='onAon'>女宝宝</view>
+  <image src='{{uploadpath}}resource/{{res.girlbaby}}' class='row' bindtap='onAon'></image>
+  <button class='baby' bindtap='onAon' style='background-color:#e599d9'>请选择</button>
    </view>
 
  <view class='flex-row flex-column flex-1'>
- <view>男孩</view>
-  <image src='{{uploadpath}}resource/{{res.qi}}' class='row'></image>
-  <button type="default" bindtap='onAon'>请选择</button>
+ <view class='bi' bindtap='onAon'>男宝宝</view>
+  <image src='{{uploadpath}}resource/{{res.boybaby}}' class='row' bindtap='onAon'></image>
+  <button class='baby' bindtap='onAon' style='background-color:#5caef1'>请选择</button>
    </view>
  </view>
  

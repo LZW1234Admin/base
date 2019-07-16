@@ -1,0 +1,4 @@
+.ci{
+  text-align: center;
+  font-size: 50rpx;
+}

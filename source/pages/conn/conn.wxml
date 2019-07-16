@@ -1,17 +1,14 @@
 <!--pages/conn/conn.wxml-->
-<swiper class="" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
-  <block wx:for="{{indexbanner}}" wx:key="index">
-    <swiper-item>
-      <image src='{{uploadpath}}indexbanner/{{item.img}}' bindtap='viewPhoto' id='{{uploadpath}}indexbanner/{{item.img}}' style='width:750rpx;height:350rpx;'></image>
-    </swiper-item>
-  </block>
-</swiper>
+
+<view class='we'>请选择5个性格特点：</view>
 <view class='flex-row flex-center flex-wrap'>
 
-
-  <view class='flex-row flex-column'wx:for="{{xinggelist}}" wx:key="ondex">
-    <image src='{{uploadpath}}xingge/{{item.images}}' class='row'></image>
-    <view type="default" bindtap='onAon'>诚实的</view>
+  <view  class='flex-row flex-column' wx:for-index='idx' wx:for="{{xinggelist}}" wx:key="ondex">
+    <image bindtap='qqq'  data-id='{{idx}}' src='{{uploadpath}}xingge/{{item.images}}' class=' {{item.xz==true?"row-hover":"row"}} '></image>
+    <view class='ai' bindtap='onAon' hover-class="ai-hover">{{item.xingge}}</view>
   </view>
 
 </view>
+<button class='bi' hover-class="bi-hover" bindtap='onBon'>提交</button>
+<view class='we'>我们命名的宝宝</view>
+

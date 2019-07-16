@@ -7,11 +7,40 @@ view{
   margin: 0 auto;
   width: 60%;
   display: flex;
-
   align-items: center;
 }
 .row{
-  width: 220rpx;
-  height: 220rpx;
-  margin-left: 10rpx;
+  width: 130rpx;
+  height:130rpx;
+  margin-left:48rpx;
+  opacity:0.6;
+}
+.row-hover{
+  width: 130rpx;
+  height:130rpx;
+  margin-left:48rpx;
+  opacity:1;
+}
+.we{
+   font-size:18px;
+   color: black;
+   text-align: center;
+}
+/*.qe{
+  background-color:#feabce;
+}*/
+.ai{
+  margin-left:15px; 
+}
+.ai-hover{
+  color:rgb(224, 67, 28);
+}
+.bi{
+ height:108rpx;
+ width: 250rpx;
+ color: white;
+ background-color: rgb(125, 209, 125);
+}
+.bi-hover{
+  background-color: rgb(65, 181, 235);
 }

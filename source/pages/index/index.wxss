@@ -42,6 +42,7 @@ page{
 button{
   margin-top: 30rpx;
   margin-bottom: 30rpx;
+
 }
 .button-sp-area{
   margin: 0 auto;
@@ -51,7 +52,16 @@ button{
 }
 .row{
   width: 300rpx;
-  height: 300rpx;
-  
-
+  height: 450rpx;
+}
+.ai{
+  font-size:22px;
+  color: rgb(247, 158, 173);
+}
+.bi{
+  font-size:22px;
+  color: rgb(122, 170, 233);
+}
+.baby{
+  color: white;
 }

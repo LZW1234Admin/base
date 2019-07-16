@@ -1,0 +1,10 @@
+<!--pages/name/name.wxml-->
+<view>
+
+  <view class='ci' wx:for="{{boybabylist}}" wx:key="ondex">
+  </view>
+  <view class='ci'  wx:for="{{girlbabylist}}" wx:key="oxdex">
+  </view>
+  <view class='ci'>英文名</view>
+  <view class='ci'>中文译名</view>
+</view>
